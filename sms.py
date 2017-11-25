@@ -7,9 +7,9 @@ from stat import *
 from mail import sendmail
 
 
-def notifier(result):
+def notifier(result,mobile):
     message = result
-    number = '7016141096'
+    number = mobile
     a =1
     while a!=3:    
         username = "8866258602"
