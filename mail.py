@@ -1,15 +1,15 @@
 import smtplib
-from email.MIMEMultipart import MIMEMultipart
-from email.MIMEText import MIMEText
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 
-def sendmail(result,tomail):
+def sendmail(result,tomail,header):
     #fromaddr = "hellohi8878@gmail.com"
     fromaddr = "keyul.kepy@gmail.com"
     toaddr = tomail
     msg = MIMEMultipart()
     msg['From'] = fromaddr
     msg['To'] = toaddr
-    msg['Subject'] = "Result Declared Just Now"
+    msg['Subject'] = header
  
     body = result + ' '
     msg.attach(MIMEText(body, 'plain'))
@@ -21,5 +21,3 @@ def sendmail(result,tomail):
     server.sendmail(fromaddr, toaddr, text)
     print('Mail Sent')
     server.quit()
-
-
