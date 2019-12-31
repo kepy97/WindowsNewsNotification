@@ -9,8 +9,8 @@ class sms:
 		Takes username and password as parameters for constructors
 		and try to log in
 		'''
-		username = "8866258602"
-		password = "27856"
+		username = "XXXX"
+		password = "XXXXX"
 		self.url='http://site24.way2sms.com/Login1.action?'
         
 		self.cred={'username': username, 'password': password}
