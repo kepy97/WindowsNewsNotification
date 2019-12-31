@@ -5,6 +5,7 @@ import datetime
 from bs4 import BeautifulSoup
 import random
 from time import sleep
+
 import pynotify
 
 while True:
